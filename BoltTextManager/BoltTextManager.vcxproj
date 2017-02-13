@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EFCCB61A-D17C-4091-BD21-F88F325B60C0}</ProjectGuid>
+    <RootNamespace>BoltTextManager</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>BoltTextManager</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StringPooling>false</StringPooling>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bg_bottom.png" />
+    <None Include="res\bg_top.png" />
+    <None Include="res\ebooks.png" />
+    <None Include="res\Encoding.png" />
+    <None Include="res\EncodingSel.png" />
+    <None Include="res\icon_browse.png" />
+    <None Include="res\icon_config.png" />
+    <None Include="res\icon_delete.png" />
+    <None Include="res\icon_doc.png" />
+    <None Include="res\icon_exit.png" />
+    <None Include="res\icon_folder_doc.png" />
+    <None Include="res\icon_info.png" />
+    <None Include="res\icon_max.png" />
+    <None Include="res\icon_refresh.png" />
+    <None Include="res\icon_save.png" />
+    <None Include="res\icon_small.png" />
+    <None Include="res\icon_start.png" />
+    <None Include="res\icon_start_gray.png" />
+    <None Include="res\icon_stop.png" />
+    <None Include="res\icon_stop_gray.png" />
+    <None Include="res\image_info.png" />
+    <None Include="res\image_text.png" />
+    <None Include="res\img_resize.png" />
+    <None Include="res\MFCUI.ico" />
+    <None Include="res\MFCUI.rc2" />
+    <None Include="res\MFCUIDoc.ico" />
+    <None Include="res\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bolt\file.h" />
+    <ClInclude Include="bolt\ini.h" />
+    <ClInclude Include="bolt\log.h" />
+    <ClInclude Include="bolt\registry.h" />
+    <ClInclude Include="bolt\strutil.h" />
+    <ClInclude Include="bolt\system.h" />
+    <ClInclude Include="bolt\win32sys.h" />
+    <ClInclude Include="common\CommonData.h" />
+    <ClInclude Include="common\CommonFunc.h" />
+    <ClInclude Include="common\ConfigManager.h" />
+    <ClInclude Include="DlgConfig.h" />
+    <ClInclude Include="DlgConfigDefault.h" />
+    <ClInclude Include="DlgAppInfo.h" />
+    <ClInclude Include="DlgMain.h" />
+    <ClInclude Include="lib\CGdiPlusBitmap.h" />
+    <ClInclude Include="lib\EncodingMapper.h" />
+    <ClInclude Include="lib\EncodingUtil.h" />
+    <ClInclude Include="lib\ImgDialogBase.h" />
+    <ClInclude Include="lib\ImgDialogUtil.h" />
+    <ClInclude Include="lib\Scintilla.h" />
+    <ClInclude Include="lib\text_encoding_detect.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MFCUI.h" />
+    <ClInclude Include="MFCUIDoc.h" />
+    <ClInclude Include="MFCUIView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="uchardet\CharDistribution.h" />
+    <ClInclude Include="uchardet\JpCntx.h" />
+    <ClInclude Include="uchardet\nsBig5Prober.h" />
+    <ClInclude Include="uchardet\nsCharSetProber.h" />
+    <ClInclude Include="uchardet\nsCodingStateMachine.h" />
+    <ClInclude Include="uchardet\nscore.h" />
+    <ClInclude Include="uchardet\nsEscCharsetProber.h" />
+    <ClInclude Include="uchardet\nsEUCJPProber.h" />
+    <ClInclude Include="uchardet\nsEUCKRProber.h" />
+    <ClInclude Include="uchardet\nsEUCTWProber.h" />
+    <ClInclude Include="uchardet\nsGB2312Prober.h" />
+    <ClInclude Include="uchardet\nsHebrewProber.h" />
+    <ClInclude Include="uchardet\nsLatin1Prober.h" />
+    <ClInclude Include="uchardet\nsMBCSGroupProber.h" />
+    <ClInclude Include="uchardet\nsPkgInt.h" />
+    <ClInclude Include="uchardet\nsSBCharSetProber.h" />
+    <ClInclude Include="uchardet\nsSBCSGroupProber.h" />
+    <ClInclude Include="uchardet\nsSJISProber.h" />
+    <ClInclude Include="uchardet\nsUniversalDetector.h" />
+    <ClInclude Include="uchardet\nsUTF8Prober.h" />
+    <ClInclude Include="uchardet\prmem.h" />
+    <ClInclude Include="uchardet\uchardet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bolt\file.cpp" />
+    <ClCompile Include="bolt\ini.cpp" />
+    <ClCompile Include="bolt\log.cpp" />
+    <ClCompile Include="bolt\registry.cpp" />
+    <ClCompile Include="bolt\strutil.cpp" />
+    <ClCompile Include="bolt\system.cpp" />
+    <ClCompile Include="bolt\win32sys.cpp" />
+    <ClCompile Include="common\ConfigManager.cpp" />
+    <ClCompile Include="DlgConfig.cpp" />
+    <ClCompile Include="DlgConfigDefault.cpp" />
+    <ClCompile Include="DlgAppInfo.cpp" />
+    <ClCompile Include="DlgMain.cpp" />
+    <ClCompile Include="lib\EncodingMapper.cpp" />
+    <ClCompile Include="lib\EncodingUtil.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="lib\ImgDialogBase.cpp" />
+    <ClCompile Include="lib\ImgDialogUtil.cpp" />
+    <ClCompile Include="lib\text_encoding_detect.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MFCUI.cpp" />
+    <ClCompile Include="MFCUIDoc.cpp" />
+    <ClCompile Include="MFCUIView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="uchardet\CharDistribution.cpp" />
+    <ClCompile Include="uchardet\JpCntx.cpp" />
+    <ClCompile Include="uchardet\LangBulgarianModel.cpp" />
+    <ClCompile Include="uchardet\LangCyrillicModel.cpp" />
+    <ClCompile Include="uchardet\LangGreekModel.cpp" />
+    <ClCompile Include="uchardet\LangHebrewModel.cpp" />
+    <ClCompile Include="uchardet\LangHungarianModel.cpp" />
+    <ClCompile Include="uchardet\LangThaiModel.cpp" />
+    <ClCompile Include="uchardet\nsBig5Prober.cpp" />
+    <ClCompile Include="uchardet\nsCharSetProber.cpp" />
+    <ClCompile Include="uchardet\nsEscCharsetProber.cpp" />
+    <ClCompile Include="uchardet\nsEscSM.cpp" />
+    <ClCompile Include="uchardet\nsEUCJPProber.cpp" />
+    <ClCompile Include="uchardet\nsEUCKRProber.cpp" />
+    <ClCompile Include="uchardet\nsEUCTWProber.cpp" />
+    <ClCompile Include="uchardet\nsGB2312Prober.cpp" />
+    <ClCompile Include="uchardet\nsHebrewProber.cpp" />
+    <ClCompile Include="uchardet\nsLatin1Prober.cpp" />
+    <ClCompile Include="uchardet\nsMBCSGroupProber.cpp" />
+    <ClCompile Include="uchardet\nsMBCSSM.cpp" />
+    <ClCompile Include="uchardet\nsSBCharSetProber.cpp" />
+    <ClCompile Include="uchardet\nsSBCSGroupProber.cpp" />
+    <ClCompile Include="uchardet\nsSJISProber.cpp" />
+    <ClCompile Include="uchardet\nsUniversalDetector.cpp" />
+    <ClCompile Include="uchardet\nsUTF8Prober.cpp" />
+    <ClCompile Include="uchardet\uchardet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon_trash.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

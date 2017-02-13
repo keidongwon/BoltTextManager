@@ -1,0 +1,9 @@
+/Debug
+/Release
+/BoltTextManager/Debug
+/BoltTextManager/Release
+/ipch
+*.sdf
+*.aps
+*.suo
+*.opensdf

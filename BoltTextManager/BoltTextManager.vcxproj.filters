@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="bolt\file.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\ini.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\log.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\strutil.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\system.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\win32sys.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt\registry.cpp">
+      <Filter>bolt</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAppInfo.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConfig.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConfigDefault.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMain.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCUIView.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCUIDoc.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCUI.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImgDialogBase.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\ImgDialogUtil.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\text_encoding_detect.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ConfigManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\CharDistribution.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\JpCntx.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangBulgarianModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangCyrillicModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangGreekModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangHebrewModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangHungarianModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\LangThaiModel.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsBig5Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsCharSetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsEscCharsetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsEscSM.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsEUCJPProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsEUCKRProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsEUCTWProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsGB2312Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsHebrewProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsLatin1Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsMBCSGroupProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsMBCSSM.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsSBCharSetProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsSBCSGroupProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsSJISProber.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsUniversalDetector.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\nsUTF8Prober.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="uchardet\uchardet.cpp">
+      <Filter>uchardet</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\EncodingMapper.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\EncodingUtil.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bolt\file.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\ini.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\log.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\strutil.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\system.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\win32sys.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt\registry.h">
+      <Filter>bolt</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMain.h">
+      <Filter>dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAppInfo.h">
+      <Filter>dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConfig.h">
+      <Filter>dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConfigDefault.h">
+      <Filter>dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCUIView.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCUIDoc.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCUI.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CGdiPlusBitmap.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ImgDialogBase.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ImgDialogUtil.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\text_encoding_detect.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CommonData.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\CommonFunc.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ConfigManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\CharDistribution.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\JpCntx.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsBig5Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsCharSetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsCodingStateMachine.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nscore.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsEscCharsetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsEUCJPProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsEUCKRProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsEUCTWProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsGB2312Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsHebrewProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsLatin1Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsMBCSGroupProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsPkgInt.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsSBCharSetProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsSBCSGroupProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsSJISProber.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsUniversalDetector.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\nsUTF8Prober.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\prmem.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="uchardet\uchardet.h">
+      <Filter>uchardet</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\EncodingMapper.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\Scintilla.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\EncodingUtil.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\icon_browse.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\img_resize.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_config.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_delete.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_doc.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_exit.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_folder_doc.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_info.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_max.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_save.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_small.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_start.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_start_gray.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_stop.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_stop_gray.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\image_info.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\image_text.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bg_bottom.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\bg_top.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\EncodingSel.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\ebooks.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\Encoding.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\title.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\MFCUIDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\MFCUI.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\MFCUI.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\icon_refresh.png">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{a43698bb-1941-4c8f-9ee3-2d8414e61fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bolt">
+      <UniqueIdentifier>{5429078c-1acb-488a-ab52-8aa4af32229b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{c12eb2b1-c787-4b64-9154-78a97ccddcae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{3720fdeb-d5d6-45ba-8522-954d06a0ce40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog">
+      <UniqueIdentifier>{3e62c4b6-0c06-4b65-a316-95be8ef335b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{e4773e56-ce50-46be-8014-fca583d91641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="uchardet">
+      <UniqueIdentifier>{521e9b4b-6052-4fe1-94a2-fcc7eb6504be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCUI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon_trash.png" />
+  </ItemGroup>
+</Project>
