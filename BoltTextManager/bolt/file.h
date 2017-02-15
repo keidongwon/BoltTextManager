@@ -19,7 +19,7 @@ public:
 	void	set_filename(LPCWSTR filename);
 	void	get_filename(LPSTR filename);
 	void	get_filename(LPWSTR filename);
-	void	sex_max_buffersize(DWORD size);
+	void	set_max_buffersize(DWORD size);
 
 	DWORD	create(DWORD dwCreation = OPEN_ALWAYS);
 	DWORD	create(DWORD dwAccess, DWORD dwShared, DWORD dwCreation);

@@ -7,7 +7,6 @@
 #include "common/CommonData.h"
 #include "DlgAppInfo.h"
 #include "DlgConfig.h"
-#include "bolt/file.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

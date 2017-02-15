@@ -34,9 +34,7 @@ class EncodingUtil
 {
 public:
 	bool check(const wchar_t *filepath, EolType &eol, std::wstring &encoding, std::wstring &charset);
-	bool check(const char *filepath, EolType &eol, std::wstring &encoding, std::wstring &charset);
 	bool convert(const wchar_t *file_in, const wchar_t *file_out, const wchar_t *tocode, const wchar_t *fromcode, bool tobom, bool frombom, EolType toeol, EolType fromeol);
-	bool convert(const char *file_in, const char *file_out, const char *tocode, const char *fromcode, bool tobom, bool frombom, EolType toeol, EolType fromeol);
 
 private:
 	EolType get_eol_format(const char* const buf, size_t length, EolType defvalue = EolType::osdefault);

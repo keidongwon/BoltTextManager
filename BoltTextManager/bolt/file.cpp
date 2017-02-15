@@ -51,7 +51,7 @@ void File::get_filename(LPWSTR filename)
 	wcsncpy(filename, A2W(m_filename), MAX_PATH);
 }
 
-void File::sex_max_buffersize(DWORD size)
+void File::set_max_buffersize(DWORD size)
 {
 	dwMaxBufferSize = size;
 }

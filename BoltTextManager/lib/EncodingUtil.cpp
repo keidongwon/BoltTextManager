@@ -149,38 +149,33 @@ bool EncodingUtil::check(const wchar_t *filepath, EolType &eol, wstring &encodin
 	return true;
 }
 
-bool EncodingUtil::check(const char *filepath, EolType &eol, std::wstring &encoding, wstring &charset)
-{
-	USES_CONVERSION;
-	return check(A2W(filepath), eol, encoding, charset);
-}
-
-bool EncodingUtil::convert(const char *file_in, const char *file_out, const char *tocode, const char *fromcode, bool tobom, bool frombom, EolType toeol, EolType fromeol)
+bool EncodingUtil::convert(const wchar_t *file_in, const wchar_t *file_out, const wchar_t *tocode, const wchar_t *fromcode, bool tobom, bool frombom, EolType toeol, EolType fromeol)
 {
 	bool iconv_flag = false;
-	FILE *fi = fopen(file_in, "rb");
-	fseek(fi, 0, SEEK_END);
+	FILE *fi = _wfopen(file_in, L"rb");
+	_fseeki64(fi, 0, SEEK_END);
 	long fi_size = (long)_ftelli64(fi);
 	if (fi_size == 0) return false;
-	fseek(fi, 0, 0);
+	_fseeki64(fi, 0, 0);
 	size_t buf_size = fi_size * 3 + 4;
 
 	iconv_t it = NULL;
-	if (strcmp(tocode, fromcode) != 0)
+	if (wcscmp(tocode, fromcode) != 0)
 	{
-		it = iconv_open(tocode, fromcode);
+		USES_CONVERSION;
+		it = iconv_open(W2A(tocode), W2A(fromcode));
 		if (it == (iconv_t)-1) return false;
 	}
 
-	if ((strcmp(tocode, fromcode) != 0) && (frombom == true) ||
-		(strcmp(tocode, fromcode) == 0) && (frombom == true && tobom == false))
+	if ((wcscmp(tocode, fromcode) != 0) && (frombom == true) ||
+		(wcscmp(tocode, fromcode) == 0) && (frombom == true && tobom == false))
 	{
-		if (strcmp(fromcode, "UTF-8") == 0)
+		if (wcscmp(fromcode, L"UTF-8") == 0)
 		{
 			fi_size -= 3;
 			fseek(fi, 3, 0);
 		}
-		else if (strcmp(fromcode, "UTF-16LE") == 0 || strcmp(fromcode, "UTF-16BE") == 0)
+		else if (wcscmp(fromcode, L"UTF-16LE") == 0 || wcscmp(fromcode, L"UTF-16BE") == 0)
 		{
 			fi_size -= 2;
 			fseek(fi, 2, 0);
@@ -193,7 +188,7 @@ bool EncodingUtil::convert(const char *file_in, const char *file_out, const char
 	in_buf[fi_size] = '\0';
 	fclose(fi);
 	
-	if (strcmp(fromcode, "UTF-16LE") != 0 && strcmp(fromcode, "UTF-16BE") != 0)
+	if (wcscmp(fromcode, L"UTF-16LE") != 0 && wcscmp(fromcode, L"UTF-16BE") != 0)
 	{
 		string tmpstr = convert_eol(in_buf, toeol, fromeol);
 		if (!tmpstr.empty())
@@ -209,7 +204,7 @@ bool EncodingUtil::convert(const char *file_in, const char *file_out, const char
 	memset(out_buf, '\0', buf_size);
 	size_t out_size = in_buf_size;
 
-	if (strcmp(tocode, fromcode) != 0)
+	if (wcscmp(tocode, fromcode) != 0)
 	{
 		char *out_buf_ptr = out_buf;
 		const char *in_buf_ptr = (const char*)in_buf;
@@ -225,14 +220,15 @@ bool EncodingUtil::convert(const char *file_in, const char *file_out, const char
 
 	FILE *fo = NULL;
 	if (file_out == NULL)
-		fopen_s(&fo, file_in, "wb");
+		_wfopen_s(&fo, file_in, L"wb");
 	else
-		fopen_s(&fo, file_out, "wb");
+		_wfopen_s(&fo, file_out, L"wb");
 
 	if ((iconv_flag == false && (tobom == true && frombom == false)) || 
 		(iconv_flag == true && tobom == true))
 	{
-		insert_bom(fo, tocode);
+		USES_CONVERSION;
+		insert_bom(fo, W2A(tocode));
 	}
 	
 	fwrite(out_buf, 1, out_size, fo);
@@ -244,8 +240,3 @@ bool EncodingUtil::convert(const char *file_in, const char *file_out, const char
 	return true;
 }
 
-bool EncodingUtil::convert(const wchar_t *file_in, const wchar_t *file_out, const wchar_t *tocode, const wchar_t *fromcode, bool tobom, bool frombom, EolType toeol, EolType fromeol)
-{
-	USES_CONVERSION;
-	return convert(W2A(file_in), W2A(file_out), W2A(tocode), W2A(fromcode), tobom, frombom, toeol, fromeol);
-}
