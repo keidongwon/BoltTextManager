@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include "EncodingUtil.h"
 #include "../bolt/strutil.h"
-#include "iconv.h"
+#include "iconv/iconv.h"
 #include "text_encoding_detect.h"
 #include "uchardet/uchardet.h"
 #include "EncodingMapper.h"

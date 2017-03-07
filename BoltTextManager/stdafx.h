@@ -40,7 +40,21 @@
 #endif
 
 #pragma comment(lib, "gdiplus")
-#pragma comment (lib, "lib/libiconv.lib")
+
+#ifdef _M_X64
+#ifdef _DEBUG
+#pragma comment (lib, "lib/iconv/lib_x64/libiconvD.lib")
+#else 
+#pragma comment (lib, "lib/iconv/lib_x64/libiconv.lib")
+#endif 
+#else // _M_X64
+#ifdef _DEBUG
+#pragma comment (lib, "lib/iconv/lib_win32/libiconvD.lib")
+#else 
+#pragma comment (lib, "lib/iconv/lib_win32/libiconv.lib")
+#endif 
+#endif // _M_X64
+
 
 #include <GdiPlus.h>
 #include "common/CommonFunc.h"
