@@ -18,7 +18,7 @@ EolType EncodingUtil::get_eol_format(const char* const buf, size_t length, EolTy
 		{
 			if (i + 1 < length && buf[i + 1] == LF)
 				return EolType::windows;
-
+			
 			return EolType::macos;
 		}
 		if (buf[i] == LF)
@@ -163,7 +163,13 @@ bool EncodingUtil::convert(const wchar_t *file_in, const wchar_t *file_out, cons
 	if (wcscmp(tocode, fromcode) != 0)
 	{
 		USES_CONVERSION;
-		it = iconv_open(W2A(tocode), W2A(fromcode));
+		// add iconv option : TRANSLIT, IGNORE	
+		string str_tocode = W2A(tocode);
+		string str_fromcode = W2A(fromcode);
+		str_tocode += "//TRANSLIT//IGNORE";
+		str_fromcode += "//TRANSLIT//IGNORE";
+		it = iconv_open(str_tocode.c_str(), str_fromcode.c_str());
+		//it = iconv_open(W2A(tocode), W2A(fromcode));
 		if (it == (iconv_t)-1) return false;
 	}
 
