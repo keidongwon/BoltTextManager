@@ -45,7 +45,7 @@ BOOL CDlgAppInfo::OnInitDialog()
 	m_static_info.MoveWindow(rcWindow.left + 50, rcWindow.top + 55, rcWindow.right - 85, rcWindow.bottom - 140);
 	m_static_info.SetFont(&m_fedit);
 	
-	CString desc = _T("Bolt Text Manager 2.0.1\n\nauthor :\n  keidongwon@gmail.com");
+	CString desc = _T("Bolt Text Manager 2\n\nauthor :\n  keidongwon@gmail.com");
 	
 	m_static_info.SetWindowText(desc);
 
