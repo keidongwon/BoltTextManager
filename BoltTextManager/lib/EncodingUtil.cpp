@@ -166,8 +166,11 @@ bool EncodingUtil::convert(const wchar_t *file_in, const wchar_t *file_out, cons
 		// add iconv option : TRANSLIT, IGNORE	
 		string str_tocode = W2A(tocode);
 		string str_fromcode = W2A(fromcode);
-		str_tocode += "//TRANSLIT//IGNORE";
-		str_fromcode += "//TRANSLIT//IGNORE";
+		str_tocode += "//IGNORE";
+		str_fromcode += "//IGNORE";
+		// TRANSLIT를 사용할 경우 오류 문자 이후로 변환이 안되는 문제가 있음 (문서 짤림)
+		//str_tocode += "//TRANSLIT";
+		//str_fromcode += "//TRANSLIT";
 		it = iconv_open(str_tocode.c_str(), str_fromcode.c_str());
 		//it = iconv_open(W2A(tocode), W2A(fromcode));
 		if (it == (iconv_t)-1) return false;
