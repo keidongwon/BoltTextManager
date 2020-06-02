@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #ifndef __AFXWIN_H__
-	#error "PCH에 대해 이 파일을 포함하기 전에 'stdafx.h'를 포함합니다."
+#error "PCH에 대해 이 파일을 포함하기 전에 'stdafx.h'를 포함합니다."
 #endif
 
 #include "resource.h"
@@ -10,23 +10,25 @@ using namespace Gdiplus;
 class CMFCUIApp : public CWinAppEx
 {
 public:
-	CMFCUIApp();
+    CMFCUIApp();
 
 public:
-	virtual BOOL InitInstance();
-	virtual int ExitInstance();
+    virtual BOOL InitInstance();
+    virtual int ExitInstance();
 
-	BOOL  m_bHiColorIcons;
+    BOOL  m_bHiColorIcons;
 
-	virtual void PreLoadState();
-	virtual void LoadCustomState();
-	virtual void SaveCustomState();
+    virtual void PreLoadState();
+    virtual void LoadCustomState();
+    virtual void SaveCustomState();
 
-	afx_msg void OnAppAbout();
-	DECLARE_MESSAGE_MAP()
+    afx_msg void OnAppAbout();
+    afx_msg void OnFileNew() { AfxMessageBox(_T("")); }
+    afx_msg void OnFileOpen() { AfxMessageBox(_T("")); }
+    DECLARE_MESSAGE_MAP()
 
 private:
-	ULONG_PTR gdiplusToken;
+    ULONG_PTR gdiplusToken;
 };
 
 extern CMFCUIApp theApp;

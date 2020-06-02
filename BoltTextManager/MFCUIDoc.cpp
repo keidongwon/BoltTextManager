@@ -22,30 +22,30 @@ CMFCUIDoc::~CMFCUIDoc()
 
 BOOL CMFCUIDoc::OnNewDocument()
 {
-	if (!CDocument::OnNewDocument())
-		return FALSE;
+    if (!CDocument::OnNewDocument())
+        return FALSE;
 
-	return TRUE;
+    return TRUE;
 }
 
 void CMFCUIDoc::Serialize(CArchive& ar)
 {
-	if (ar.IsStoring())
-	{
-	}
-	else
-	{
-	}
+    if (ar.IsStoring())
+    {
+    }
+    else
+    {
+    }
 }
 
 #ifdef _DEBUG
 void CMFCUIDoc::AssertValid() const
 {
-	CDocument::AssertValid();
+    CDocument::AssertValid();
 }
 
 void CMFCUIDoc::Dump(CDumpContext& dc) const
 {
-	CDocument::Dump(dc);
+    CDocument::Dump(dc);
 }
 #endif 
