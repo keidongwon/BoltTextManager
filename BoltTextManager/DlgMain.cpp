@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
 #include <ShellAPI.h>
+#include <locale>
 #include "MFCUIDoc.h"
 #include "MFCUIView.h"
 #include "MainFrm.h"
